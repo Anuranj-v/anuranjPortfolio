@@ -1,0 +1,17 @@
+/* App.css – App-level styles */
+
+#main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Alternate section background tinting */
+#about,
+#experience,
+#contact {
+  background: linear-gradient(to bottom,
+    transparent,
+    rgba(13, 5, 10, 0.4),
+    transparent
+  );
+}

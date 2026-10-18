@@ -1,0 +1,258 @@
+/* Experience.css */
+
+.experience {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, transparent, rgba(10, 5, 8, 0.3), transparent);
+}
+
+.experience__glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 20%;
+  right: -100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 23, 68, 0.07) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+/* Timeline */
+.experience__timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+/* Spine */
+.exp-item__spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.exp-item__dot {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--dot-color, var(--color-accent-red)), color-mix(in srgb, var(--dot-color, var(--color-accent-red)) 60%, black));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 0 20px color-mix(in srgb, var(--dot-color, var(--color-accent-red)) 50%, transparent),
+              0 0 40px color-mix(in srgb, var(--dot-color, var(--color-accent-red)) 20%, transparent);
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.exp-item__line {
+  width: 2px;
+  flex: 1;
+  min-height: 40px;
+  background: linear-gradient(to bottom, var(--color-border), transparent);
+  margin-top: var(--space-sm);
+}
+
+/* Card */
+.exp-card {
+  padding: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.exp-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.exp-card__logo-wrap {
+  flex-shrink: 0;
+}
+
+.exp-card__logo {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  object-fit: contain;
+  background: rgba(255,255,255,0.05);
+  padding: 4px;
+  border: 1px solid var(--color-border-subtle);
+}
+
+.exp-card__logo-placeholder {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(255,23,68,0.15), rgba(198,40,40,0.1));
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--c, var(--color-accent-red));
+}
+
+.exp-card__title-group {
+  flex: 1;
+  min-width: 0;
+}
+
+.exp-card__role {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 2px;
+}
+
+.exp-card__org {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent-red2);
+  margin-bottom: var(--space-sm);
+}
+
+.exp-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.exp-card__meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.exp-card__meta-item svg {
+  color: var(--color-accent-red);
+  flex-shrink: 0;
+}
+
+.exp-card__type-tag {
+  flex-shrink: 0;
+}
+
+.exp-card__desc {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+/* Sections */
+.exp-card__section {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.exp-card__section-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-accent-red2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md);
+}
+
+/* Skills */
+.exp-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.exp-card__skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  font-size: 0.73rem;
+  font-weight: 600;
+  background: rgba(255, 23, 68, 0.08);
+  color: var(--color-text-secondary);
+  border: 1px solid rgba(255, 23, 68, 0.15);
+}
+
+.exp-card__skill-chip svg {
+  color: var(--color-accent-red);
+}
+
+/* Projects */
+.exp-card__projects {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.exp-card__project-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.83rem;
+  color: var(--color-text-secondary);
+}
+
+.exp-card__project-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent-red);
+  flex-shrink: 0;
+  box-shadow: 0 0 6px var(--color-accent-red);
+}
+
+/* Empty state */
+.experience__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-3xl) 0;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.experience__empty svg {
+  color: rgba(255,23,68,0.3);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .exp-item {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-item__spine {
+    display: none;
+  }
+
+  .exp-card__header {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+}
