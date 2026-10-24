@@ -26,6 +26,14 @@ const lineData = [
 
 const roles = ['Data Analyst', 'Power BI Specialist', 'React & Django Developer', 'Problem Solver'];
 
+const HERO_PARTICLES = Array.from({ length: 20 }, (_, i) => ({
+  id: i,
+  x: `${((i * 37 + 13) % 100)}%`,
+  y: `${((i * 43 + 27) % 100)}%`,
+  delay: `${((i * 1.3) % 5).toFixed(1)}s`,
+  size: `${(2 + ((i * 1.7) % 3)).toFixed(1)}px`,
+}));
+
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
 
@@ -50,13 +58,17 @@ export default function Hero() {
 
       {/* Floating particles */}
       <div className="hero__particles" aria-hidden="true">
-        {[...Array(20)].map((_, i) => (
-          <span key={i} className="hero__particle" style={{
-            '--x': `${Math.random() * 100}%`,
-            '--y': `${Math.random() * 100}%`,
-            '--delay': `${Math.random() * 5}s`,
-            '--size': `${2 + Math.random() * 3}px`,
-          }} />
+        {HERO_PARTICLES.map((p) => (
+          <span
+            key={p.id}
+            className="hero__particle"
+            style={{
+              '--x': p.x,
+              '--y': p.y,
+              '--delay': p.delay,
+              '--size': p.size,
+            }}
+          />
         ))}
       </div>
 
