@@ -14,7 +14,7 @@ export default function App() {
     <>
       {/* Animated background grid */}
       <div className="bg-grid" aria-hidden="true" />
-      <div></div>
+
       <Navbar />
 
       <main id="main-content">
