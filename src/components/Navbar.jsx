@@ -17,7 +17,6 @@ export default function Navbar() {
   const [scrolled,   setScrolled]   = useState(false);
   const [menuOpen,   setMenuOpen]   = useState(false);
   const [activeLink, setActiveLink] = useState('#home');
-  const [resumeOk,   setResumeOk]   = useState(false);
   const menuRef = useRef(null);
 
   /* Scroll handler */
@@ -48,28 +47,10 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handleClick);
   }, []);
 
-  /* Check if resume exists */
-  useEffect(() => {
-    fetch(profile.resumePath, { method: 'HEAD' })
-      .then(r => setResumeOk(r.ok))
-      .catch(() => setResumeOk(false));
-  }, []);
-
   const handleNavClick = (href) => {
     setMenuOpen(false);
     const el = document.getElementById(href.slice(1));
     if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleDownloadCV = () => {
-    if (resumeOk) {
-      const a = document.createElement('a');
-      a.href = profile.resumePath;
-      a.download = 'Anuranj_V_Resume.pdf';
-      a.click();
-    } else {
-      alert('Resume PDF not found. Please place your resume at /public/resume.pdf');
-    }
   };
 
   return (
@@ -103,15 +84,16 @@ export default function Navbar() {
         </ul>
 
         {/* Download CV */}
-        <button
+        <a
+          href={profile.resumePath}
+          download="Anuranj_V_Resume.pdf"
           className="btn btn-primary navbar__cv-btn"
-          onClick={handleDownloadCV}
           aria-label="Download CV"
-          title={resumeOk ? 'Download CV' : 'Resume not yet uploaded'}
+          title="Download CV"
         >
           <Download size={16} />
           <span>Download CV</span>
-        </button>
+        </a>
 
         {/* Hamburger */}
         <button
@@ -145,9 +127,14 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <button className="btn btn-primary navbar__mobile-cv" onClick={handleDownloadCV}>
+            <a
+              href={profile.resumePath}
+              download="Anuranj_V_Resume.pdf"
+              className="btn btn-primary navbar__mobile-cv"
+              aria-label="Download CV"
+            >
               <Download size={16} /> Download CV
-            </button>
+            </a>
           </li>
         </ul>
       </div>

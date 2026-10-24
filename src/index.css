@@ -263,6 +263,21 @@ ul, ol {
   transform: translateY(-2px);
 }
 
+.btn-secondary {
+  background: rgba(255, 23, 68, 0.12);
+  color: #fff;
+  border: 1.5px solid rgba(255, 23, 68, 0.45);
+  box-shadow: 0 4px 18px rgba(255, 23, 68, 0.18);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 23, 68, 0.22);
+  border-color: var(--color-accent-red);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 23, 68, 0.35);
+}
+
 .btn-outline {
   background: transparent;
   color: var(--color-text-primary);

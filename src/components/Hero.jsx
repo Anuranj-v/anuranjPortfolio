@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ArrowRight, Mail, Download, TrendingUp, BarChart2, Activity } from 'lucide-react';
+import { ArrowRight, Mail, TrendingUp, BarChart2, Activity } from 'lucide-react';
 import { BarChart, Bar, LineChart, Line, ResponsiveContainer, XAxis, YAxis, Tooltip } from 'recharts';
 import profile from '../data/profile';
 import './Hero.css';
@@ -28,17 +28,10 @@ const roles = ['Data Analyst', 'Power BI Specialist', 'React & Django Developer'
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
-  const [resumeOk, setResumeOk] = useState(false);
 
   useEffect(() => {
     const t = setInterval(() => setRoleIndex(i => (i + 1) % roles.length), 2800);
     return () => clearInterval(t);
-  }, []);
-
-  useEffect(() => {
-    fetch(profile.resumePath, { method: 'HEAD' })
-      .then(r => setResumeOk(r.ok))
-      .catch(() => setResumeOk(false));
   }, []);
 
   const handleExplore = () => {
@@ -47,17 +40,6 @@ export default function Hero() {
 
   const handleContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleDownload = () => {
-    if (resumeOk) {
-      const a = document.createElement('a');
-      a.href = profile.resumePath;
-      a.download = 'Anuranj_V_Resume.pdf';
-      a.click();
-    } else {
-      alert('Resume PDF not found. Please place your resume at /public/resume.pdf');
-    }
   };
 
   return (

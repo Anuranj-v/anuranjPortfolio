@@ -1,30 +1,38 @@
 // ============================================================
-// EXPERIENCE DATA - Verified from LinkedIn
+// EXPERIENCE DATA - Verified from Resume & Professional Training
 // ============================================================
 
 const experience = [
   {
     id: 1,
-    organization: "Camerin - Indian Institute Of Upskill",
-    role: "Data Analyst Intern",
-    type: "Internship & Training",
-    startDate: "July 2024",
-    endDate: "Present",
+    organization: "Camerin Innovative",
+    role: "Data Analytics Professional Training",
+    type: "Professional Training",
+    startDate: "2026",
+    endDate: "Present (Ongoing)",
     location: "Kerala, India",
     description:
-      "Working as a Data Analyst Intern at Camerin Innovate Pvt. Ltd. (Indian Institute of Upskill). Gaining comprehensive hands-on experience in working with real-world datasets, performing data cleaning, building interactive Power BI dashboards, and delivering actionable business intelligence.",
+      "Developing practical skills in data analysis, data cleaning, visualization, and business intelligence. Training intensively with SQL, Python, Excel, Power BI, DAX, and Power Query, applying data analysis techniques to real-world datasets and business scenarios.",
+    highlights: [
+      "Developing practical skills in data analysis, data cleaning, visualization, and business intelligence",
+      "Training with SQL, Python, Excel, Power BI, DAX, and Power Query",
+      "Applying data analysis techniques to datasets and business scenarios",
+    ],
     skillsLearned: [
-      "Microsoft Power BI & DAX Calculations",
-      "Advanced Microsoft Excel & Pivot Tables",
-      "Data Cleaning, Preprocessing & Normalization",
-      "SQL Querying & Relational Databases",
-      "Python for Data Exploration (Pandas, NumPy)",
-      "Business Intelligence & Interactive Reporting",
-      "Effective Team Communication & Presentation",
+      "Exploratory Data Analysis (EDA)",
+      "Data Cleaning & Transformation",
+      "Data Validation",
+      "SQL Querying & Databases",
+      "Python Data Analytics",
+      "Microsoft Power BI & Power BI Service",
+      "DAX Measures & Power Query",
+      "Star Schema & Data Modeling",
+      "Microsoft Excel (Pivot Tables, XLOOKUP, INDEX/MATCH)",
+      "Interactive Dashboards & KPI Tracking",
     ],
     projects: [
-      "Indian Bike Sales & Performance Dashboard (Power BI)",
-      "Sales Performance & Growth Analysis Dashboard (Microsoft Excel)",
+      "Sales Performance & Growth Analysis Dashboard (Excel | 47.68+ Cr sales, 89K+ orders)",
+      "Indian Bikes Sales & Market Analysis (Power BI | 1,000 models, 8 manufacturers)",
     ],
     logo: "",
     color: "#ff1744",
