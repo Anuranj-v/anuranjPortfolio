@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ArrowRight, Mail, TrendingUp, BarChart2 } from 'lucide-react';
+import { ArrowRight, Mail, TrendingUp, BarChart2, Activity } from 'lucide-react';
 import profile from '../data/profile';
 import './Hero.css';
 
