@@ -236,8 +236,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
-  height: 280px;
+  width: 320px;
+  height: 320px;
 }
 
 .hero__portrait-ring {
@@ -271,8 +271,8 @@
 }
 
 .hero__portrait {
-  width: 240px;
-  height: 240px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid rgba(255, 255, 255, 0.6);
@@ -359,34 +359,6 @@
   font-size: 0.8rem;
 }
 
-/* Charts */
-.hero__charts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-md);
-  width: 100%;
-  max-width: 400px;
-}
-
-.hero__chart-card {
-  padding: var(--space-md);
-}
-
-.hero__chart-header {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.72rem;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-sm);
-  font-weight: 600;
-  letter-spacing: 0.03em;
-}
-
-.hero__chart-header svg {
-  color: var(--color-accent-red);
-}
-
 /* Scroll indicator */
 .hero__scroll-hint {
   position: absolute;
@@ -464,11 +436,6 @@
 }
 
 @media (max-width: 480px) {
-  .hero__charts {
-    grid-template-columns: 1fr;
-    max-width: 280px;
-  }
-
   .hero__float-card--tl,
   .hero__float-card--tr,
   .hero__float-card--bl {

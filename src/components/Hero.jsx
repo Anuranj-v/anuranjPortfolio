@@ -1,28 +1,7 @@
 import { useState, useEffect } from 'react';
-import { ArrowRight, Mail, TrendingUp, BarChart2, Activity } from 'lucide-react';
-import { BarChart, Bar, LineChart, Line, ResponsiveContainer, XAxis, YAxis, Tooltip } from 'recharts';
+import { ArrowRight, Mail, TrendingUp, BarChart2 } from 'lucide-react';
 import profile from '../data/profile';
 import './Hero.css';
-
-const barData = [
-  { name: 'Jan', v: 65 },
-  { name: 'Feb', v: 78 },
-  { name: 'Mar', v: 55 },
-  { name: 'Apr', v: 88 },
-  { name: 'May', v: 72 },
-  { name: 'Jun', v: 95 },
-];
-
-const lineData = [
-  { name: 'W1', v: 30 },
-  { name: 'W2', v: 52 },
-  { name: 'W3', v: 44 },
-  { name: 'W4', v: 68 },
-  { name: 'W5', v: 60 },
-  { name: 'W6', v: 80 },
-  { name: 'W7', v: 72 },
-  { name: 'W8', v: 95 },
-];
 
 const roles = ['Data Analyst', 'Power BI Specialist', 'React & Django Developer', 'Problem Solver'];
 
@@ -164,64 +143,6 @@ export default function Hero() {
             <div className="hero__float-card hero__float-card--bl">
               <span className="hero__float-label">Insights</span>
               <span className="hero__float-value">Live</span>
-            </div>
-          </div>
-
-          {/* Charts */}
-          <div className="hero__charts">
-            <div className="hero__chart-card glass-card">
-              <div className="hero__chart-header">
-                <BarChart2 size={14} />
-                <span>Monthly Performance</span>
-              </div>
-              <ResponsiveContainer width="100%" height={90}>
-                <BarChart data={barData} margin={{ top: 4, right: 4, left: -20, bottom: 0 }}>
-                  <XAxis dataKey="name" tick={{ fill: '#606080', fontSize: 10 }} axisLine={false} tickLine={false} />
-                  <YAxis hide />
-                  <Tooltip
-                    contentStyle={{ background: '#0a0a12', border: '1px solid rgba(255,255,255,0.25)', borderRadius: 8, fontSize: 11 }}
-                    cursor={false}
-                  />
-                  <Bar dataKey="v" fill="url(#barGrad)" radius={[4, 4, 0, 0]} />
-                  <defs>
-                    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#ffffff" />
-                      <stop offset="100%" stopColor="#94a3b8" stopOpacity={0.6} />
-                    </linearGradient>
-                  </defs>
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-
-            <div className="hero__chart-card glass-card">
-              <div className="hero__chart-header">
-                <Activity size={14} />
-                <span>Growth Trend</span>
-              </div>
-              <ResponsiveContainer width="100%" height={90}>
-                <LineChart data={lineData} margin={{ top: 4, right: 4, left: -20, bottom: 0 }}>
-                  <XAxis dataKey="name" tick={{ fill: '#606080', fontSize: 10 }} axisLine={false} tickLine={false} />
-                  <YAxis hide />
-                  <Tooltip
-                    contentStyle={{ background: '#0a0a12', border: '1px solid rgba(255,255,255,0.25)', borderRadius: 8, fontSize: 11 }}
-                    cursor={false}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="v"
-                    stroke="#ffffff"
-                    strokeWidth={2}
-                    dot={{ fill: '#ffffff', r: 3 }}
-                    activeDot={{ r: 5, fill: '#ffffff' }}
-                  />
-                  <defs>
-                    <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#ffffff" stopOpacity={0.35} />
-                      <stop offset="100%" stopColor="#ffffff" stopOpacity={0} />
-                    </linearGradient>
-                  </defs>
-                </LineChart>
-              </ResponsiveContainer>
             </div>
           </div>
         </div>
