@@ -3,7 +3,7 @@
 .skills {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to bottom, transparent, rgba(10, 5, 8, 0.5), transparent);
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.015), transparent);
 }
 
 .skills__glow {
@@ -14,7 +14,7 @@
   left: -200px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 23, 68, 0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
   filter: blur(80px);
   pointer-events: none;
 }
@@ -47,10 +47,10 @@
 }
 
 .skills__filter-btn--active {
-  background: linear-gradient(135deg, rgba(255,23,68,0.2), rgba(255,23,68,0.08));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.06));
   border-color: var(--color-accent-red);
   color: var(--color-accent-red2);
-  box-shadow: 0 0 15px rgba(255,23,68,0.15);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.12);
 }
 
 /* Skills grid */
@@ -77,7 +77,7 @@
   right: 0;
   width: 80px;
   height: 80px;
-  background: radial-gradient(circle at top right, var(--icon-color, #ff1744) 0%, transparent 70%);
+  background: radial-gradient(circle at top right, var(--icon-color, #ffffff) 0%, transparent 70%);
   opacity: 0.08;
   transition: opacity var(--transition-base);
 }
@@ -101,12 +101,12 @@
 }
 
 .skill-card:hover .skill-card__icon-wrap {
-  border-color: var(--icon-color, #ff1744);
-  box-shadow: 0 0 20px color-mix(in srgb, var(--icon-color, #ff1744) 30%, transparent);
+  border-color: var(--icon-color, #ffffff);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--icon-color, #ffffff) 30%, transparent);
 }
 
 .skill-card__icon {
-  color: var(--icon-color, #ff1744);
+  color: var(--icon-color, #ffffff);
   position: relative;
   z-index: 1;
 }
@@ -115,7 +115,7 @@
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(circle, var(--icon-color, #ff1744) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--icon-color, #ffffff) 0%, transparent 70%);
   opacity: 0;
   transition: opacity var(--transition-base);
   filter: blur(8px);

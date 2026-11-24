@@ -11,7 +11,7 @@
 #contact {
   background: linear-gradient(to bottom,
     transparent,
-    rgba(13, 5, 10, 0.4),
+    rgba(255, 255, 255, 0.015),
     transparent
   );
 }

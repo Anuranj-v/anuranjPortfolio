@@ -36,7 +36,7 @@ export default function Certificates() {
             {certificates.map(cert => (
               <article key={cert.id} className="cert-card glass-card" aria-label={cert.title}>
                 {/* Card top */}
-                <div className="cert-card__top" style={{ '--c': cert.color || '#ff1744' }}>
+                <div className="cert-card__top" style={{ '--c': cert.color || '#ffffff' }}>
                   <div className="cert-card__icon-wrap">
                     {cert.logo ? (
                       <img src={cert.logo} alt={`${cert.organization} logo`} className="cert-card__org-logo" />

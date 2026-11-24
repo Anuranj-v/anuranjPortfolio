@@ -13,7 +13,7 @@
   right: -200px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 23, 68, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.06) 0%, transparent 70%);
   filter: blur(60px);
   pointer-events: none;
 }
@@ -52,7 +52,7 @@
   position: absolute;
   inset: 10px;
   border-radius: var(--radius-lg);
-  background: radial-gradient(circle at 50% 100%, rgba(255, 23, 68, 0.25) 0%, transparent 60%);
+  background: radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
   z-index: 1;
 }
 
@@ -63,7 +63,7 @@
   object-fit: cover;
   object-position: center 15%;
   border-radius: var(--radius-xl);
-  border: 2px solid rgba(255, 23, 68, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.25);
   z-index: 2;
 }
 
@@ -74,8 +74,8 @@
   width: 100%;
   height: 100%;
   border-radius: var(--radius-xl);
-  border: 2px solid rgba(255, 23, 68, 0.2);
-  background: linear-gradient(135deg, #1a0d14, #0d0d1a);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: linear-gradient(135deg, #12121a, #0a0a10);
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -189,15 +189,15 @@ a.about__info-item:hover {
   color: var(--color-text-secondary);
   padding: 0.5rem 0.75rem;
   border-radius: var(--radius-md);
-  background: rgba(255, 23, 68, 0.05);
-  border: 1px solid rgba(255, 23, 68, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all var(--transition-fast);
 }
 
 .about__interest-item:hover {
-  background: rgba(255, 23, 68, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--color-text-primary);
-  border-color: rgba(255, 23, 68, 0.25);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 .about__interest-arrow {

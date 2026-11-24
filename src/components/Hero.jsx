@@ -179,14 +179,14 @@ export default function Hero() {
                   <XAxis dataKey="name" tick={{ fill: '#606080', fontSize: 10 }} axisLine={false} tickLine={false} />
                   <YAxis hide />
                   <Tooltip
-                    contentStyle={{ background: '#0a0a12', border: '1px solid rgba(255,23,68,0.3)', borderRadius: 8, fontSize: 11 }}
+                    contentStyle={{ background: '#0a0a12', border: '1px solid rgba(255,255,255,0.25)', borderRadius: 8, fontSize: 11 }}
                     cursor={false}
                   />
                   <Bar dataKey="v" fill="url(#barGrad)" radius={[4, 4, 0, 0]} />
                   <defs>
                     <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#ff1744" />
-                      <stop offset="100%" stopColor="#c62828" stopOpacity={0.6} />
+                      <stop offset="0%" stopColor="#ffffff" />
+                      <stop offset="100%" stopColor="#94a3b8" stopOpacity={0.6} />
                     </linearGradient>
                   </defs>
                 </BarChart>
@@ -203,21 +203,21 @@ export default function Hero() {
                   <XAxis dataKey="name" tick={{ fill: '#606080', fontSize: 10 }} axisLine={false} tickLine={false} />
                   <YAxis hide />
                   <Tooltip
-                    contentStyle={{ background: '#0a0a12', border: '1px solid rgba(255,23,68,0.3)', borderRadius: 8, fontSize: 11 }}
+                    contentStyle={{ background: '#0a0a12', border: '1px solid rgba(255,255,255,0.25)', borderRadius: 8, fontSize: 11 }}
                     cursor={false}
                   />
                   <Line
                     type="monotone"
                     dataKey="v"
-                    stroke="#ff1744"
+                    stroke="#ffffff"
                     strokeWidth={2}
-                    dot={{ fill: '#ff1744', r: 3 }}
-                    activeDot={{ r: 5, fill: '#ff4569' }}
+                    dot={{ fill: '#ffffff', r: 3 }}
+                    activeDot={{ r: 5, fill: '#ffffff' }}
                   />
                   <defs>
                     <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#ff1744" stopOpacity={0.4} />
-                      <stop offset="100%" stopColor="#ff1744" stopOpacity={0} />
+                      <stop offset="0%" stopColor="#ffffff" stopOpacity={0.35} />
+                      <stop offset="100%" stopColor="#ffffff" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                 </LineChart>

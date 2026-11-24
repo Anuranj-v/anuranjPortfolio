@@ -35,7 +35,7 @@ const experience = [
       "Sales Performance & Growth Analysis Dashboard (Excel | 1,000 models, 8 manufacturers)",
     ],
     logo: "",
-    color: "#ff1744",
+    color: "#ffffff",
   },
 ];
 
