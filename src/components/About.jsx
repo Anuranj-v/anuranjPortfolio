@@ -34,7 +34,7 @@ export default function About() {
                 }}
               />
               <div className="about__image-placeholder">
-                <span>AV</span>
+                <img src="/images/av-logo.png" alt="Av Logo" className="about__placeholder-img" />
               </div>
 
               {/* Info chip */}

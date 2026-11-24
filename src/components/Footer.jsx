@@ -1,4 +1,4 @@
-import { Mail, ArrowUp, BarChart2 } from 'lucide-react';
+import { Mail, ArrowUp } from 'lucide-react';
 import { LinkedinIcon, GithubIcon } from './SocialIcons';
 import profile from '../data/profile';
 import './Footer.css';
@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="footer__brand">
           <div className="footer__logo">
             <span className="footer__logo-icon">
-              <BarChart2 size={20} />
+              <img src="/images/av-logo.png" alt="Av Logo" className="footer__logo-img" />
             </span>
             <span className="footer__logo-text">
               Anuranj <span className="text-gradient">V</span>

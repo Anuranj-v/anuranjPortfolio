@@ -4,6 +4,7 @@
 
 const profile = {
   name: "Anuranj V",
+  logo: "/images/av-logo.png",
   title: "Data Analyst | Power BI & SQL Specialist",
   tagline: "Analytical and detail-oriented Data Analyst with hands-on experience in data cleaning, exploratory data analysis, data transformation, and interactive dashboard development with Power BI, SQL, Python, and Excel.",
   education: "Bachelor of Computer Applications (BCA) – Yeldo Baselios College, Kothamangalam (2023–2026)",
@@ -15,20 +16,19 @@ const profile = {
   resumePath: "/resume.pdf",
 
   about: {
-    intro: `Analytical and detail-oriented Data Analyst with hands-on experience in data cleaning, exploratory data analysis, data transformation, and interactive dashboard development. Skilled in SQL, Python, Microsoft Excel, Power BI, and Power Query.`,
-    description: `Experienced in transforming raw datasets into meaningful insights, tracking KPIs, analyzing business performance, and presenting data through interactive visualizations. Currently pursuing Data Analytics Professional Training at Camerin Innovative while completing Bachelor of Computer Applications (BCA) at Yeldo Baselios College, Kothamangalam.`,
+    intro: `Bachelor of Computer Applications (BCA) graduate aspiring to build a career as a Data Analyst. Skilled in Power BI, Microsoft Excel, SQL, and Python, with hands-on practice creating sales and inventory dashboards, analyzing business metrics, and presenting insights through visual reports.`,
+    description: `Interested in transforming raw data into clear, actionable information to support business decisions. Experienced as a Data Analyst Intern at Camerin Innovate Pvt. Ltd., developing interactive dashboards, writing optimized SQL queries, and performing end-to-end exploratory data analysis.`,
     college: "Yeldo Baselios College, Kothamangalam",
     university: "Mahatma Gandhi University",
-    duration: "2023 – 2026 (May 2026)",
+    duration: "Jul 2023 – May 2026",
     strengths: [
+      "Problem Solving",
       "Analytical thinking",
-      "Problem solving",
-      "Attention to detail",
+      "Communication",
     ],
     languages: [
       "English",
       "Malayalam",
-      "Hindi",
     ],
     interests: [
       "Interactive Dashboards & KPI Tracking",
@@ -40,12 +40,13 @@ const profile = {
       "Advanced Excel (Pivot Tables, XLOOKUP, INDEX/MATCH)",
       "Python Data Analytics & Visual Storytelling",
     ],
-    profileImage: "/images/profile.jpg",
+    profileImage: "/images/portrait.jpg",
   },
 
   hero: {
     greeting: "Hello, I'm",
     portraitImage: "/images/portrait.jpg",
+    logoImage: "/images/av-logo.png",
   },
 
   footer: {

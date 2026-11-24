@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { BarChart2, Menu, X, Download } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import profile from '../data/profile';
 import './Navbar.css';
 
@@ -59,7 +59,7 @@ export default function Navbar() {
         {/* Logo */}
         <a className="navbar__logo" href="#home" onClick={() => handleNavClick('#home')} aria-label="Anuranj V – Home">
           <span className="navbar__logo-icon">
-            <BarChart2 size={22} />
+            <img src="/images/av-logo.png" alt="Av Logo" className="navbar__logo-img" />
           </span>
           <span className="navbar__logo-text">
             Anuranj <span className="text-gradient">V</span>
