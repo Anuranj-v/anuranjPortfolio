@@ -1,0 +1,160 @@
+{
+  "name": "Scandi Blue Yellow",
+  "dataColors": [
+    "#7030A0",
+    "#E53935",
+    "#111111",
+    "#A678C8",
+    "#FF8A80",
+    "#4A1F6F",
+    "#767676",
+    "#D9C2E8",
+    "#3599B8",
+    "#DFBFBF",
+    "#4AC5BB",
+    "#5F6B6D",
+    "#FB8281",
+    "#FFB3AE",
+    "#7F898A",
+    "#A4DDEE",
+    "#FDAB89",
+    "#B687AC",
+    "#28738A",
+    "#A78F8F",
+    "#168980",
+    "#293537",
+    "#BB4A4A",
+    "#C62828",
+    "#475052",
+    "#6A9FB0",
+    "#BD7150",
+    "#7B4F71",
+    "#1B4D5C",
+    "#706060",
+    "#0F5C55",
+    "#1C2325"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#111111",
+  "tableAccent": "#7030A0",
+  "good": "#7030A0",
+  "bad": "#111111",
+  "neutral": "#E53935",
+  "maximum": "#7030A0",
+  "center": "#E53935",
+  "minimum": "#D9C2E8",
+  "null": "#DADCE0",
+  "textClasses": {
+    "callout": {
+      "fontFace": "Segoe UI",
+      "color": "#4A1F6F",
+      "fontSize": 32
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "color": "#111111",
+      "fontSize": 14
+    },
+    "header": {
+      "fontFace": "Segoe UI",
+      "color": "#000000",
+      "fontSize": 12
+    },
+    "label": {
+      "fontFace": "'Segoe UI Semibold', wf_segoe-ui_semibold, helvetica, arial, sans-serif",
+      "color": "#767676",
+      "fontSize": 10
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": false,
+            "color": {
+              "solid": {
+                "color": "#202124"
+              }
+            },
+            "radius": 8
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontColor": {
+              "solid": {
+                "color": "#111111"
+              }
+            },
+            "fontSize": 14,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "outspacePane": [
+          {
+            "fontFamily": "'Segoe UI Semibold', wf_segoe-ui_semibold, helvetica, arial, sans-serif",
+            "border": false
+          }
+        ],
+        "filterCard": [
+          {
+            "$id": "Available",
+            "border": false,
+            "fontFamily": "'Segoe UI Semibold', wf_segoe-ui_semibold, helvetica, arial, sans-serif"
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#7030A0"
+              }
+            },
+            "fontSize": 32,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "categoryLabels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#767676"
+              }
+            },
+            "fontSize": 11
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F8F9FA"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}
